@@ -213,7 +213,7 @@ if (crewMass < 500) {
   Usa un for loop per cambiare il valore della proprietà "gender" di alcuni personaggi dal valore "n/a" a "robot" (Tip: puoi effettuare la riassegnazione del valore corrispondente o creare un nuovo array)
 */
 
-//Array.splice(start_index, delete_count, value1, value2, value3, ...)
+
 for (i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "n/a") {
     //console.log("dentro na");
@@ -236,13 +236,53 @@ let m=0
 for (i = 0; i < charactersNames.length; i++) {
   for ( m = 0; m < femaleCharacters.length; m++) {
     if(charactersNames[i]===femaleCharacters[m].name){
-      delete charactersNames[i];
-      
+      //delete charactersNames[i];
+      //Array.splice(start_index, delete_count, value1, value2, value3, ...)
+      charactersNames.splice(i,1);
     }
   }
 }
-console.log(charactersNames);
+console.log("Nomi Personaggi femminili rimossi:",charactersNames);
 
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+let randomCharacter=Math.floor(Math.random() * starWarsCharacters.length);
+//console.log(starWarsCharacters[randomCharacter]);
+console.log("Character n.",randomCharacter,"is named",starWarsCharacters[randomCharacter].name,",",
+            pronoun(starWarsCharacters[randomCharacter].gender),"is ",starWarsCharacters[randomCharacter].gender,",",
+            pronoun2(starWarsCharacters[randomCharacter].gender),"eyes are",starWarsCharacters[randomCharacter].eye_color,",",
+            pronoun2(starWarsCharacters[randomCharacter].gender), "hair are",starWarsCharacters[randomCharacter].hair_color,",",
+            "and",pronoun2(starWarsCharacters[randomCharacter].gender),"skin is",starWarsCharacters[randomCharacter].skin_color,".",
+            pronoun(starWarsCharacters[randomCharacter].gender),"is",starWarsCharacters[randomCharacter].height,"tall, ",
+            pronoun2(starWarsCharacters[randomCharacter].gender),"mass is",starWarsCharacters[randomCharacter].mass,",",
+            pronoun2(starWarsCharacters[randomCharacter].gender),"birth_year is ",starWarsCharacters[randomCharacter].birth_year,".",);
+
+
+function pronoun(gend){
+  if(gend==="male")
+    return "he";
+  else if(gend==="female")
+    return "she";
+  else 
+  return "it";
+  
+}
+function pronoun2(gend){
+  if(gend==="male")
+    return "his";
+  else if(gend==="female")
+    return "her";
+  else 
+  return "its";
+  
+}
+
+/*name: "C-3PO",
+    height: 167,
+    mass: 75,
+    hair_color: "n/a",
+    skin_color: "gold",
+    eye_color: "yellow",
+    birth_year: "112BBY",
+    gender: "n/a",*/
