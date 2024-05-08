@@ -256,7 +256,7 @@ console.log("Character n.",randomCharacter,"is named",starWarsCharacters[randomC
             "and",pronoun2(starWarsCharacters[randomCharacter].gender),"skin is",starWarsCharacters[randomCharacter].skin_color,".",//pelle
             pronoun(starWarsCharacters[randomCharacter].gender),"is",starWarsCharacters[randomCharacter].height,"tall, ",//altezza
             pronoun2(starWarsCharacters[randomCharacter].gender),"mass is",starWarsCharacters[randomCharacter].mass,",",//massa
-            pronoun2(starWarsCharacters[randomCharacter].gender),"birth_year is ",starWarsCharacters[randomCharacter].birth_year,".",);//nascita
+            pronoun2(starWarsCharacters[randomCharacter].gender),"birth year is ",starWarsCharacters[randomCharacter].birth_year,".",);//nascita
 
 
 function pronoun(gend){
