@@ -220,7 +220,7 @@ for (i = 0; i < starWarsCharacters.length; i++) {
     starWarsCharacters[i].gender = "robot";
   }
 }
-console.log(starWarsCharacters);
+//console.log(starWarsCharacters);
 console.log("Lista Robot:");
 for (i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "robot") {
@@ -247,7 +247,7 @@ console.log("Nomi Personaggi femminili rimossi:",charactersNames);
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
-let randomCharacter=Math.floor(Math.random() * starWarsCharacters.length);
+let randomCharacter=Math.floor(Math.random() * starWarsCharacters.length); //n random da 0 a x, in questo caso da 0 a 9
 //console.log(starWarsCharacters[randomCharacter]);
 console.log("Character n.",randomCharacter,"is named",starWarsCharacters[randomCharacter].name,",",//nome
             pronoun(starWarsCharacters[randomCharacter].gender),"is ",starWarsCharacters[randomCharacter].gender,",",//genere
