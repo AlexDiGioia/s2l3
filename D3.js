@@ -249,14 +249,14 @@ console.log("Nomi Personaggi femminili rimossi:",charactersNames);
 */
 let randomCharacter=Math.floor(Math.random() * starWarsCharacters.length);
 //console.log(starWarsCharacters[randomCharacter]);
-console.log("Character n.",randomCharacter,"is named",starWarsCharacters[randomCharacter].name,",",
-            pronoun(starWarsCharacters[randomCharacter].gender),"is ",starWarsCharacters[randomCharacter].gender,",",
-            pronoun2(starWarsCharacters[randomCharacter].gender),"eyes are",starWarsCharacters[randomCharacter].eye_color,",",
-            pronoun2(starWarsCharacters[randomCharacter].gender), "hair are",starWarsCharacters[randomCharacter].hair_color,",",
-            "and",pronoun2(starWarsCharacters[randomCharacter].gender),"skin is",starWarsCharacters[randomCharacter].skin_color,".",
-            pronoun(starWarsCharacters[randomCharacter].gender),"is",starWarsCharacters[randomCharacter].height,"tall, ",
-            pronoun2(starWarsCharacters[randomCharacter].gender),"mass is",starWarsCharacters[randomCharacter].mass,",",
-            pronoun2(starWarsCharacters[randomCharacter].gender),"birth_year is ",starWarsCharacters[randomCharacter].birth_year,".",);
+console.log("Character n.",randomCharacter,"is named",starWarsCharacters[randomCharacter].name,",",//nome
+            pronoun(starWarsCharacters[randomCharacter].gender),"is ",starWarsCharacters[randomCharacter].gender,",",//genere
+            pronoun2(starWarsCharacters[randomCharacter].gender),"eyes are",starWarsCharacters[randomCharacter].eye_color,",",//colore occhi
+            pronoun2(starWarsCharacters[randomCharacter].gender), "hair are",starWarsCharacters[randomCharacter].hair_color,",",//capelli
+            "and",pronoun2(starWarsCharacters[randomCharacter].gender),"skin is",starWarsCharacters[randomCharacter].skin_color,".",//pelle
+            pronoun(starWarsCharacters[randomCharacter].gender),"is",starWarsCharacters[randomCharacter].height,"tall, ",//altezza
+            pronoun2(starWarsCharacters[randomCharacter].gender),"mass is",starWarsCharacters[randomCharacter].mass,",",//massa
+            pronoun2(starWarsCharacters[randomCharacter].gender),"birth_year is ",starWarsCharacters[randomCharacter].birth_year,".",);//nascita
 
 
 function pronoun(gend){
